@@ -89,8 +89,8 @@ def main(argc, argv):
         while True:
             try:
                 brain_fuck = BrainFuck();
-                str = input("@ ")
-                brain_fuck.run(str)
+                program = input("@ ")
+                brain_fuck.run(program)
             except BrainFuckError as error:
                 print(error, end="")
 
